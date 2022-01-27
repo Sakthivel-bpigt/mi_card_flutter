@@ -8,41 +8,34 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                color: Colors.red,
-                child: Text('Container1'),
-                height: double.infinity,
+        home: Scaffold(
+      backgroundColor: Colors.teal,
+      body: SafeArea(
+        child: Column(
+          children: [
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('lib/images/diamond.jpeg'),
+            ),
+            Text(
+              'Hill',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 40.0,
+                fontWeight: FontWeight.bold,
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    color: Colors.yellow,
-                    height: 100.0,
-                    width: 100.0,
-                  ),
-                  Container(
-                    color: Colors.green,
-                    height: 100.0,
-                    width: 100.0,
-                  ),
-                ],
+            ),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                fontFamily: 'SourceSansPro',
+                fontSize: 30.0,
+                fontWeight: FontWeight.normal,
               ),
-              Container(
-                color: Colors.blue,
-                child: Text('Container3'),
-                height: double.infinity,
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
-    );
+    ));
   }
 }

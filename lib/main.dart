@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'Pacifico',
                 fontSize: 40.0,
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -30,6 +31,8 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'SourceSansPro',
                 fontSize: 30.0,
+                color: Colors.white,
+                letterSpacing: 2.5,
                 fontWeight: FontWeight.normal,
               ),
             ),

@@ -36,6 +36,57 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.normal,
               ),
             ),
+            Card(
+              //padding: EdgeInsets.all(10.0),
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Padding(
+                padding: EdgeInsets.all(25.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      size: 50.0,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    Text(
+                      '+01 12345 67890',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 30.0,
+                        color: Colors.black,
+                        letterSpacing: 2.5,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Card(
+              //padding: EdgeInsets.all(10.0),
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.black,
+                ),
+                title: Text(
+                  'hill@gmail.com',
+                  style: TextStyle(
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 30.0,
+                    color: Colors.black,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
